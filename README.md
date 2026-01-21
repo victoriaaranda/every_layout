@@ -1,2 +1,2 @@
 # every_layout
-https://github.com/victoriaaranda/every_layout/
+https://victoriaaranda.github.io/every_layout/
