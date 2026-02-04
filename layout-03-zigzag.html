@@ -3,20 +3,20 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>02 colonnes</title>
+		<title>03 zig zag</title>
 
 		<link rel="stylesheet" href="rsrc/style.css"> <!-- design, thème général -->
 		<style media="screen">
 
 			/* Fonction essentielle */
-			section { display: flex;}
+			section:nth-last-of-type(even) { flex-direction: row-reverse;} 
 			
 			/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-		-	-	-	-*/
 
 
 			/* bling */
 			section {
-			/* display flex */
+				display:flex;
 				align-items: flex-start;
 				gap: 1rem;
 				margin: 4rem 0;
@@ -24,6 +24,8 @@
 				padding-top: 1rem;
 			}
 
+			p{ max-width: 60ch;}
+			
 			.vignettes{
 				/*width: 15rem; */
 				/* parce que j'utilise un système flex, la largeur ne marche pas, on régle avec flex */
@@ -31,7 +33,6 @@
 				aspect-ratio: 1/1;
 			}
 			
-			p{ max-width: 60ch;}
 
 			.vignette img{
 				width: 100%;
@@ -48,7 +49,7 @@
 	<body>
 		<div>
 				<h4>fonction essenciel</h4>
-				<code>body{ max-width: 30rem; margin: auto; }</code>
+				<code>section:nth-last-of-type(even) { flex-direction: row-reverse;} </code>
 		</div>
 
 		<section>
