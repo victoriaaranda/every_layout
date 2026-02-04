@@ -5,11 +5,72 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>every layout</title>
 	<link rel="stylesheet" href="rsrc/style.css">
+
+	<style>
+		section {
+			display:flex;
+			align-items: flex-start;
+			gap: 1rem;
+			margin: 4rem 0;
+			border-top: 1px solid grey;
+			padding-top: 1rem;
+			}
+
+			.vignettes{
+				/*width: 15rem; */
+				/* parce que j'utilise un système flex, la largeur ne marche pas, on régle avec flex */
+				flex: 0 0 15rem;
+				aspect-ratio: 1/1;
+			}
+			
+			p{ max-width: 60ch;}
+			h3 { margin-bottom: 1rem;}
+
+			.vignette img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-fit: contain;
+			}
+	</style>
 </head>
 <body>
 	<h1>Every layout</h1>
-	<a href="layout-01-simple.html">
-		<img src="vignettes/layout-01-simple.png" alt="">
-	</a>
+	
+		<section>
+			<div class="vignettes">
+				<a href="layout-01-simple.html">
+					<img src="vignettes/layout-01-simple.png" alt="">
+				</a>
+			</div>
+			<div class="description">
+				<h3>Une simple page de texte.</h3>
+				<p>Natus dolor alias assumenda veritatis inventore velit et obcaecati quod. Fuga, nihil. Distinctio minus iusto labore fugit animi explicabo dolore, repellat ducimus. Recusandae sed magni fugiat commodi rem. Eum harum aperiam sit fuga earum sequi accusamus iusto voluptate doloribus. Enim veritatis corporis soluta a.</p>
+			</div>
+		</section>
+
+	<section>
+			<div class="vignettes">
+				<a href="layout-02-colonnes.html">
+					<img src="vignettes/layout-02-colonnes.png" alt="">
+				</a>
+			</div>
+			<div class="description">
+				<h3>Une simple page de texte.</h3>
+				<p>Natus dolor alias assumenda veritatis inventore velit et obcaecati quod. Fuga, nihil. Distinctio minus iusto labore fugit animi explicabo dolore, repellat ducimus. Recusandae sed magni fugiat commodi rem. Eum harum aperiam sit fuga earum sequi accusamus iusto voluptate doloribus. Enim veritatis corporis soluta a.</p>
+			</div>
+		</section>
+
+		<section>
+			<div class="vignettes">
+				<a href="layout-03-zigzag.html">
+					<img src="vignettes/layout-03-zigzag.png" alt="">
+				</a>
+			</div>
+			<div class="description">
+				<h3>Une simple page de texte.</h3>
+				<p>Natus dolor alias assumenda veritatis inventore velit et obcaecati quod. Fuga, nihil. Distinctio minus iusto labore fugit animi explicabo dolore, repellat ducimus. Recusandae sed magni fugiat commodi rem. Eum harum aperiam sit fuga earum sequi accusamus iusto voluptate doloribus. Enim veritatis corporis soluta a.</p>
+			</div>
+		</section>
 </body>
 </html>
